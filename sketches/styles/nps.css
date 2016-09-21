@@ -1,0 +1,120 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/*
+   This makes sure that the padding and border
+   are included in the total width and height of the elements.
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.nps-bubble {
+    font-size: 17px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 39px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nps-title {
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	color: #4C4C4C;
+    padding: 21px;
+    text-align: center;
+}
+
+.nps-dd-first-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nps-dd-first-row .nps-bubble {
+	color: red;
+	margin-right: 7px;
+}
+
+.nps-dd-first-row :last-child {
+    margin-right: 0 !important;
+}
+
+.nps-dd-second-row {
+	margin: 10px 0 0 16px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nps-dd-second-row .nps-bubble {
+	color: red;
+	margin-left: 7px;
+}
+
+.nps-dd-second-row :last-child {
+    margin-right: 0 !important;
+}
+
+.npscontrols-wrapper {
+    margin: 0 auto 16px;
+}
+
+.npscontrols-btn {
+    width: 160px;
+    margin: 0 4px;
+}
+
+.doubledecknps-meter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.doubledecknps-meter-inner {
+    display: table;
+    margin: 0 auto;
+}
+
+.doubledecknps-tag {
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.doubledecknps-controls {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}

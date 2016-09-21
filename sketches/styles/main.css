@@ -1,0 +1,328 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+@font-face {
+    font-family: 'museo-sans-rounded';
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.eot');
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.eot?#iefix') format('embedded-opentype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.woff') format('woff'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.ttf') format('truetype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-300-webfont.svg#museo_sans_rounded300') format('svg');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'museo-sans-rounded';
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.eot');
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.eot?#iefix') format('embedded-opentype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.woff') format('woff'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.ttf') format('truetype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-500-webfont.svg#museo_sans_rounded500') format('svg');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'museo-sans-rounded';
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.eot');
+    src: url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.eot?#iefix') format('embedded-opentype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.woff') format('woff'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.ttf') format('truetype'), url('//d7mj4aqfscim2.cloudfront.net/proxy/fonts/museo/museosansrounded-700-webfont.svg#museo_sans_rounded700') format('svg');
+    font-weight: 700;
+    font-style: normal
+}
+/*
+* {
+    outline: none
+}*/
+
+body {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 26px;
+    text-transform: none;
+    background: #f0f0f0;
+    color: #6f6f6f;
+    font-family: "museo-sans-rounded", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll
+}
+
+button {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 999px;
+    color: white;
+    height: 45px;
+    outline: none;
+    padding: 0 20px
+}
+
+button:hover {
+    opacity: .9
+}
+
+.btn-primary {
+    background: #1cb0f6
+}
+
+.btn-primary:disabled {
+    background: #888;
+    opacity: .5
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #6f6f6f;
+    box-sizing: border-box;
+    color: #6f6f6f
+}
+
+.btn-secondary:hover {
+    color: #4c4c4c;
+    opacity: 1
+}
+
+.btn-secondary:disabled {
+    color: #888;
+    opacity: .5
+}
+
+.btn-facebook {
+    background: #39559f
+}
+
+.btn-facebook:before {
+    background: url("/design/img/facebook-icon.svg");
+    content: '';
+    float: left;
+    height: 20px;
+    margin-top: 2px;
+    width: 10px
+}
+
+.btn-google {
+    background: #df360a
+}
+
+.btn-google:before {
+    background: url("/design/img/google-icon.svg");
+    content: '';
+    float: left;
+    height: 21px;
+    margin-top: 3px;
+    width: 21px
+}
+
+.radio-label,
+.checkbox-label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px
+}
+
+.radio-label.bordered,
+.checkbox-label.bordered {
+    border-radius: 999px;
+    border: 2px solid #6f6f6f;
+    box-sizing: border-box;
+    color: #6f6f6f;
+    font-size: 17px;
+    min-width: 220px;
+    padding: 8px 15px
+}
+
+.radio-label.bordered.checked,
+.checkbox-label.bordered.checked {
+    background: #1cb0f6;
+    border-color: #1cb0f6;
+    color: white
+}
+
+input[type=text] {
+    border: 2px solid #cfcfcf;
+    border-radius: 6px;
+    color: #4c4c4c;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 15px
+}
+
+input[type=text]:focus {
+    border-color: #1cb0f6
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #6f6f6f;
+    border-radius: 999px;
+    height: 1em;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    width: 1em
+}
+
+input[type=radio]:checked {
+    border-color: #1cb0f6
+}
+
+input[type=radio]:checked:after {
+    background: #1cb0f6;
+    border-radius: 999px;
+    content: '';
+    height: 55%;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 55%
+}
+
+.radio-label.bordered input:checked {
+    background: #1cb0f6;
+    border-color: white
+}
+
+.radio-label.bordered input:checked:after {
+    background: white
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #6f6f6f;
+    height: 1em;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    width: 1em
+}
+
+input[type=checkbox]:checked {
+    border-color: #1cb0f6
+}
+
+input[type=checkbox]:checked:after {
+    -webkit-transform: rotate(-45deg);
+    border-bottom: 3px solid #1cb0f6;
+    border-left: 3px solid #1cb0f6;
+    content: '';
+    height: 35%;
+    left: 13%;
+    position: absolute;
+    top: 13%;
+    width: 55%
+}
