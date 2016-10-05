@@ -221,16 +221,20 @@ app.components.virtualizer.controller = function(args) {
 app.components.virtualizer.view = function(ctrl, args) {
     const {l10n} = app.constants;
 
-    return m.component(app.components.DoubleDeckNPS, {
-        title: l10n.how_likely,
-        variant_data: {
-            chronology: 'standard',
-            color_scheme: 'neutral',
-        },
-        click_skip: ctrl.click_skip,
-        click_submit: ctrl.click_submit,
-        selected_score: ctrl.selected_score,
-    });
+    return m('div', [
+        m('p', `Status: global Android is available: ${Android !== undefined}`),
+        _.map(_.keys(window), key => m('p', key)),
+        m.component(app.components.DoubleDeckNPS, {
+            title: l10n.how_likely,
+            variant_data: {
+                chronology: 'standard',
+                color_scheme: 'neutral',
+            },
+            click_skip: ctrl.click_skip,
+            click_submit: ctrl.click_submit,
+            selected_score: ctrl.selected_score,
+        })
+    ]);
 };
 
 app.controller = function(args) {
