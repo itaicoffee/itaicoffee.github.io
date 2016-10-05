@@ -222,7 +222,7 @@ app.components.virtualizer.view = function(ctrl, args) {
     const {l10n} = app.constants;
 
     return m('div', [
-        m('p', `Status: global Android is available: ${Android !== undefined}`),
+        m('p', `Status: global Android is available: ${window.Android !== undefined}`),
         _.map(_.keys(window), key => m('p', key)),
         m.component(app.components.DoubleDeckNPS, {
             title: l10n.how_likely,
