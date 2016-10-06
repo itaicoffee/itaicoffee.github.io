@@ -1,0 +1,13 @@
+participant CodeBase
+participant AccountManager
+participant Informant
+participant WebManager
+participant Analytics
+CodeBase->AccountManager: request condition
+AccountManager->CodeBase: condition
+Note over AccountManager: load/save Informant
+AccountManager->Informant: request condition
+Informant->AccountManager: condition
+Informant->WebManager: record treatments
+Note over WebManager: send request to backend
+AccountManager-->Analytics: register tracking properties
