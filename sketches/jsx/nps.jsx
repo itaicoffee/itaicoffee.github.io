@@ -199,15 +199,15 @@ app.components.virtualizer.controller = function(args) {
     this.selected_score = m.prop();
 
     this.click_skip = () => {
-        if (Android) {
-            Android.finish('payload');
+        if (window.Android) {
+            window.Android.finish('payload');
         } else {
             console.log('Android not found');
         }
     };
 
     this.click_submit = () => {
-        if (!Android) {
+        if (!window.Android) {
             console.log('Android global not found');
             return;
         }
@@ -215,7 +215,7 @@ app.components.virtualizer.controller = function(args) {
         const status = app.helpers.nps.score_to_status(this.selected_score());
         const message = `User is a ${status}!`;
         console.log('finishing with xp: ', score);
-        Android.finishWithXp('payload with xp', score);
+        window.Android.finishWithXp('payload with xp', score);
     };
 };
 
