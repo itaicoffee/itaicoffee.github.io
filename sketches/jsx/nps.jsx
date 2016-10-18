@@ -214,18 +214,14 @@ app.components.virtualizer.controller = function(args) {
         const score = this.selected_score();
         const status = app.helpers.nps.score_to_status(this.selected_score());
         const message = `User is a ${status}!`;
+        console.log('finishing with xp: ', score);
         Android.finishWithXp('payload with xp', score);
     };
 };
 
 app.components.virtualizer.view = function(ctrl, args) {
     const {l10n} = app.constants;
-
     return m('div', [
-        m('p', `Status: global Android is available: ${window.Android !== undefined}`),
-        m('p', `Status: global Android is available: ${window.Android}`),
-        m('p', `Status: global Android is available: ${typeof window.Android}`),
-        m('p', `Status: global Android is available: ${window.Android.length}`),
         _.map(_.keys(window.Android), key => m('p', key)),
         m.component(app.components.DoubleDeckNPS, {
             title: l10n.how_likely,
